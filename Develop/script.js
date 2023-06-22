@@ -33,5 +33,13 @@ function generatePassword() {
   if (includeNumeric) selectedChars += numericChars;
   if (includeSpecialChars) selectedChars += specialChars;
 
+  let generatedPassword = "";
+  for (let i = 0; i < parsedPasswordLength; i++) {
+    const randomIndex = Math.floor(Math.random() * selectedChars.length);
+    generatedPassword += selectedChars[randomIndex];
+  }
+  
+  return generatedPassword;
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
