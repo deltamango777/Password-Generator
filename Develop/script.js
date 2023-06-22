@@ -8,13 +8,14 @@ const numericChars = "0123456789";
 const specialChars = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
 
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+function generatePassword() {
+  const passwordLength = prompt("Please enter a password length between between 8 and 128 characters:");
+  const parsedPasswordLength = parseInt(passwordLength);
 
-  passwordText.value = password;
-
-}
+  if (isNaN(parsedPasswordLength) || parsedPasswordLength < 8 || parsedPasswordLength > 128) {
+    alert("Invalid password length. Please enter a valid number between 8 and 128.");
+    return "";
+  }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
