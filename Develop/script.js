@@ -17,5 +17,10 @@ function generatePassword() {
     return "";
   }
 
+  const includeLowercase = confirm("Include lowercase characters?");
+  const includeUppercase = confirm("Include uppercase characters?");
+  const includeNumeric = confirm("Include numeric characters?");
+  const includeSpecialChars = confirm("Include special characters?");
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
