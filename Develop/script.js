@@ -22,5 +22,10 @@ function generatePassword() {
   const includeNumeric = confirm("Include numeric characters?");
   const includeSpecialChars = confirm("Include special characters?");
 
+  if (!includeLowercase && !includeUppercase && !includeNumeric && !includeSpecialChars) {
+    alert("Please make sure to select at least one character type.");
+    return "";
+  }
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
