@@ -1,6 +1,11 @@
 // Assignment Code
 const generateBtn = document.querySelector("#generate");
 
+// Character sets
+const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const numericChars = "0123456789";
+const specialChars = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
 
 // Write password to the #password input
 function writePassword() {
