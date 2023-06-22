@@ -27,5 +27,11 @@ function generatePassword() {
     return "";
   }
 
+  let selectedChars = "";
+  if (includeLowercase) selectedChars += lowercaseChars;
+  if (includeUppercase) selectedChars += uppercaseChars;
+  if (includeNumeric) selectedChars += numericChars;
+  if (includeSpecialChars) selectedChars += specialChars;
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
