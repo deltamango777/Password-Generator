@@ -11,7 +11,7 @@ I built this project to help make it easier to create passwords so that greater 
 - What problem does it solve?
 It makes it easier to automate the process of password generation via prompts that need little to no effort. 
 - What did you learn?
-I learned the more about the dynamic potential of js and its ability to bring life to web applications.
+I learned more about the dynamic potential of js and its ability to bring life to web applications.
 
 ## Installation
 
