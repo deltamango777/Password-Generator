@@ -11,7 +11,7 @@ I built this project to help make it easier to create passwords so that greater 
 - What problem does it solve?
 It makes it easier to automate the process of password generation via prompts that need little to no effort. 
 - What did you learn?
-I learned the more about the dynamic potential of js and its ability to bring life to web applications.
+I learned more about the dynamic potential of js and its ability to bring life to web applications.
 
 ## Installation
 
@@ -31,5 +31,5 @@ n/a
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+n/a
 
